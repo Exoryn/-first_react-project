@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: blue;
+  color: white;
 }
 
 .App-link {
@@ -35,4 +35,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+.custom-button {
+  font-size: 1.2rem;         /* un peu plus grand que la normale */
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-button:hover {
+  transform: scale(1.05);         /* zoom léger */
+  background-color: #21a1f1;      /* couleur un peu plus foncée */
+}
+.scpdata-button {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c823c;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.scpdata-button:hover {
+  transform: scale(1.05);
+  background-color: #15712e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.App-header a {
+  color: #61dafb; /* couleur du lien */
+  text-decoration: none;
+}
+
+.App-header a:hover {
+  text-decoration: underline;
+  color: #21a1f1;
+}
+
+.App-header a:visited {
+  color: #61dafb; /* empêche le violet */
 }
